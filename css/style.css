@@ -8,7 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 section {
-  padding: 20px 0;
+  padding: 20px;
 }
 .content {
   width: 80%;
@@ -64,11 +64,14 @@ p {
   font-weight: 500;
 }
 hr {
-  margin: 50px 0;
+  margin: 30px 0;
 }
 h3 {
   font-weight: 500;
   margin-bottom: 10px;
+}
+h2 {
+  margin-bottom: 40px;
 }
 /* BT1 */
 #salary__total {
@@ -93,6 +96,14 @@ h3 {
   display: none;
 }
 .realnumber__arrow {
+  display: flex;
+  justify-content: space-between;
+}
+#realnumber_input {
+  display: none;
+}
+/* BT3 */
+.rectangle__btn {
   display: flex;
   justify-content: space-between;
 }

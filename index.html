@@ -17,8 +17,9 @@
 <body>
     <!-- BT1 -->
     <h1>Bài tập JavaScrip</h1>
-    <h2>Bài 1: Tính tiền lương nhân viên</h2>
+
     <section>
+        <h2>Bài 1: Tính tiền lương nhân viên</h2>
         <div class="content">
             <div class="content__left">
                 <p>Nhập tiền lương 1 ngày công</p>
@@ -34,8 +35,8 @@
     </section>
     <hr>
     <!-- BT2 -->
-    <h2>Bài 2: Tính giá trị trung bình của 5 số thực</h2>
     <section>
+        <h2>Bài 2: Tính giá trị trung bình của 5 số thực</h2>
         <div class="content">
             <div class="content__left">
                 <h3>Nhập 5 số thực</h3>
@@ -80,7 +81,10 @@
                         <button id="realnumber__next5">Tiếp Tục</button>
                     </div>
                 </div>
-                <p>Trung bình </p>
+                <p>Trung bình <span id="realnumber_input">
+                        ( <span id="realnumber_input1"></span>, <span id="realnumber_input2"></span>, <span
+                            id="realnumber_input3"></span>, <span id="realnumber_input4"></span>, <span
+                            id="realnumber_input5"></span> )</span> </p>
                 <p class="output" id="realnumber__average">0</p>
                 <button id="realnumber__btn">Tính Trung Bình</button>
 
@@ -90,8 +94,8 @@
     </section>
     <hr>
     <!-- BT3 -->
-    <h2>Bài 3: Quy đổi tiền</h2>
     <section>
+        <h2>Bài 3: Quy đổi tiền</h2>
         <div class="content">
             <div class="content__left">
                 <h3>Quy đổi USD sang VND</h3>
@@ -102,6 +106,33 @@
             </div>
         </div>
     </section>
+    <hr>
+    <!-- BT4 -->
+    <section>
+        <h2>Bài 4: Tính diện tích, chu vi hình chữ nhật</h2>
+        <div class="content">
+            <div class="content__left">
+                <h3>Tính S, P của hình chữ nhật</h3>
+                <p>Nhập chiều dài</p>
+                <input type="text" name="" id="rectangle__length" placeholder="chiều dài">
+                <p>Nhập chiều rộng</p>
+                <input type="text" name="" id="rectangle__width" placeholder="chiều rộng">
+                <div class="rectangle__btn">
+                    <button id="rectangle__perimeter">Tính Chu Vi</button>
+                    <button id="rectangle__acreage">Tính Diện Tích</button>
+                </div>
+                <p class="output">Chu Vi : P=
+                    <span id="rectangle__outputP">
+                    </span>
+                </p>
+                <p class="output">Diện Tích : S=
+                    <span id="rectangle__outputS"></span>
+                </p>
+
+            </div>
+        </div>
+    </section>
+
 
     <script src="./js/index.js"></script>
 </body>
