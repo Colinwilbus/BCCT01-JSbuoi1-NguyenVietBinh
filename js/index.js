@@ -156,3 +156,29 @@ document.getElementById("rectangle__acreage").onclick = function () {
   acreage = parseFloat(rectangleLength) * parseFloat(rectangleWidth);
   rectangleOutputS.innerHTML = acreage.toLocaleString("vi-VN");
 };
+// BT 5
+/**
+ * phân tích
+ * xử lý button number__btn
+ * input
+ * nhập số có 2 chữ số vào ô number__input
+ * progress
+ * lấy giá trị value từ ô number__input
+ * numberDonvi =  numberInput % 10
+ * numberChuc = numberInput / 10 - numberDonvi / 10
+ * output
+ * xuất ra kết quả ở ô number__output
+ *
+ */
+document.getElementById("number__btn").onclick = function () {
+  var numberInput = document.getElementById("number__input").value;
+  var numberOutput = document.getElementById("number__output");
+  var numberDonvi = numberInput % 10;
+  var numberChuc = Math.floor(numberInput / 10);
+  if (numberInput >= 10 && numberDonvi < 10 && numberChuc < 10) {
+    var TongHaiKySo = numberDonvi + numberChuc;
+    numberOutput.innerHTML = TongHaiKySo;
+  } else {
+    numberOutput.innerHTML = "Nhập lại số đi bạn eyy!! ";
+  }
+};
